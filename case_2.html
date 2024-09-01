@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6</title>
+
+    <link rel="stylesheet" href="../assets/style/normalize.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header{
+            background-color: whitesmoke;
+            border: 5px solid yellow;
+
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+            position: relative;
+            height: 100px;
+        }
+
+        header>nav{
+            height: fit-content;
+        }
+
+        header>nav>ul{
+            list-style: none;
+            color: green;
+        }
+
+        header>img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        header>nav>ul>li{
+            display: inline;
+            color: green;
+            margin-right: 20px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        div.container>main>div>p{
+            font-family: "Khand", sans-serif, system-ui;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Navigation Side */
+        section {
+            background-color: purple;
+            width: 300px;
+            padding: 20px;
+        }
+
+        section>div>nav>ul {
+            margin: 0;
+            list-style: none;
+        }
+
+        section>div>nav>ul>li {
+            font-family: Inter, sans-serif;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        /* Body */
+        main {
+            flex: 2;
+            padding: 20px;
+        }
+
+        main>div:first-child>img{
+            border: 5px solid grey;
+        }
+
+        main>div>img {
+
+         /*   width: calc(100%/3);*/
+
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        /*footer*/
+        footer{
+            background-color: grey;
+
+            display: flex;
+            justify-content: center;
+
+            padding-top: 5px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--Header Section-->
+    <header>
+        <img src="../assets/ijse%20logo.png" alt="IJSE" title="ijse" width="100">
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+        <!--Navigation side-->
+        <section>
+            <div>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Service</li>
+                        <li>Contacts</li>
+                        <li>About Us</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!--Body-->
+        <main>
+            <!--Gifs-->
+            <div>
+                <img src="../assets/penguin-252_128.gif" width="400">
+                <img src="../assets/penguin-252_128.gif" width="400">
+                <img src="../assets/penguin-252_128.gif" width="400">
+            </div>
+
+
+
+            <div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+            </div>
+        </main>
+    </div>
+
+
+    <!--Footer Section-->
+    <footer>
+        <h3>Developed By IJSE</h3>
+    </footer>
+
+</body>
+</html>
