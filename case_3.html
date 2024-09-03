@@ -8,7 +8,7 @@
 
     <style>
 
-        body{
+        section{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,33 +17,54 @@
             position: relative;
         }
 
-        div:first-child{
-            border: 15px solid grey;
-            border-radius: 50%;
-            width: 300px;
-            height: 300px;
+        section>div:first-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            position: fixed;
+            border-radius: 50%;
+            width: 270px;
+            height: 270px;
+
+            font-weight: bold;
+            font-size: xx-large;
+
+            text-align: center;
         }
 
-        div:nth-child(2){
+        section:first-child>div:first-child{
+            background: purple;
+        }
+
+        section:first-child>div:nth-child(2){
             border: 15px solid red;
             border-radius: 50%;
             width: 270px;
             height: 270px;
 
             position: fixed;
+
+            z-index: 1;
         }
 
-        div:nth-child(3){
-            background: royalblue;
+        section:first-child>div:nth-child(3){
+            border: 15px solid grey;
             border-radius: 50%;
-            width: 270px;
-            height: 270px;
+            width: 300px;
+            height: 300px;
 
+            position: fixed;
 
+            z-index: 2;
         }
 
+        section:nth-child(2)>div{
+            background: royalblue;
+        }
+
+        section:nth-child(3)>div{
+            background: darkred;
+        }
 
 
     </style>
@@ -51,9 +72,20 @@
 </head>
 <body>
 
-    <div></div>
-    <div></div>
-    <div></div>
+    <section>
+        <div>Hello</div>
+        <div></div>
+        <div></div>
+    </section>
+
+
+    <section>
+        <div>Welcome to</div>
+    </section>
+
+    <section>
+        <div>Institute of Software Engineering</div>
+    </section>
 
 </body>
 </html>
